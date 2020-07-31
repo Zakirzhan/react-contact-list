@@ -4,7 +4,7 @@ import Context from "./Context";
 
 const ContactList = ({ onAddNewClick }) => {
   const { contacts } = React.useContext(Context);
-
+console.log(contacts);
   const columns = [
     {
       title: "Name",
@@ -15,6 +15,21 @@ const ContactList = ({ onAddNewClick }) => {
       title: "Phone Number",
       dataIndex: "phone",
       key: "phone",
+    },
+    {
+      title: "Birthday",
+      dataIndex: "birthday",
+      key: "birthday",
+    },
+    {
+      title: "Gender",
+      dataIndex: "gender",
+      key: "gender",
+    },
+    {
+      title: "Emergency?",
+      dataIndex: "isEmergency",
+      key: "isEmergency",
     },
   ];
 
